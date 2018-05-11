@@ -121,13 +121,13 @@ USE_L10N = True
 
 USE_TZ = True
 
-#
-# EMAIL_USE_SSL = True
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = '****'
-# EMAIL_HOST_PASSWORD = '****'
-# EMAIL_PORT = 465
-# DEFAULT_FROM_EMAIL = '****'
+
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'cruspstudio@gmail.com'
+EMAIL_HOST_PASSWORD = 'vlad1488'
+EMAIL_PORT = 465
+DEFAULT_FROM_EMAIL = 'cruspstudio@gmail.com'
 
 
 # Static files (CSS, JavaScript, Images)
