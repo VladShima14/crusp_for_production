@@ -1,5 +1,5 @@
 from django.db import models
-
+from ckeditor_uploader.fields import RichTextUploadingField
 # Create your models here.
 
 
@@ -8,7 +8,7 @@ class Project(models.Model):
     # db_index for fast search in db
     title = models.CharField(max_length=500, verbose_name='Project title')
     main_image = models.ImageField(upload_to='projects/%Y/%m/%d', verbose_name="Main image")
-    description = models.TextField(verbose_name='Project description')
+    description = RichTextUploadingField(verbose_name='Project description')
     created = models.DateTimeField(auto_now_add=True)
 
     class Meta:

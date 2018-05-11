@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'studio',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -78,9 +80,9 @@ WSGI_APPLICATION = 'crusp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '****',
-        'USER': '****',
-        'PASSWORD': '****',
+        'NAME': 'crusp_db',
+        'USER': 'cruspuser',
+        'PASSWORD': 'crusp1488',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -119,13 +121,13 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-EMAIL_USE_SSL = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = '****'
-EMAIL_HOST_PASSWORD = '****'
-EMAIL_PORT = 465
-DEFAULT_FROM_EMAIL = '****'
+#
+# EMAIL_USE_SSL = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = '****'
+# EMAIL_HOST_PASSWORD = '****'
+# EMAIL_PORT = 465
+# DEFAULT_FROM_EMAIL = '****'
 
 
 # Static files (CSS, JavaScript, Images)
@@ -136,3 +138,15 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+
+CKEDITOR_CONFIGS = {
+'default': {
+'toolbar': 'full',
+'height': 400,
+'width': 900,
+},
+}
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+CKEDITOR_IMAGE_BACKEND = 'pillow'
