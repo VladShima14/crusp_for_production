@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'crusp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'crusp_db',
-        'USER': 'cruspuser',
-        'PASSWORD': 'crusp1488',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'NAME': '*****',
+        'USER': '*****',
+        'PASSWORD': '*****',
+        'HOST': '******',
+        'PORT': '*****',
     }
 }
 
@@ -124,10 +124,10 @@ USE_TZ = True
 
 EMAIL_USE_SSL = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'cruspstudio@gmail.com'
-EMAIL_HOST_PASSWORD = 'vlad1488'
+EMAIL_HOST_USER = '******'
+EMAIL_HOST_PASSWORD = '*******'
 EMAIL_PORT = 465
-DEFAULT_FROM_EMAIL = 'cruspstudio@gmail.com'
+DEFAULT_FROM_EMAIL = '*******'
 
 
 # Static files (CSS, JavaScript, Images)
